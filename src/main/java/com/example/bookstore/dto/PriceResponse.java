@@ -1,3 +1,4 @@
 package com.example.bookstore.dto;
-public record PriceResponse (){
-}
+
+public record PriceResponse (double price)
+{  }
