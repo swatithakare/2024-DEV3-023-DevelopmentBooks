@@ -70,6 +70,8 @@ public class BookStoreServiceTest {
         basket.addBook("Clean Code");
         basket.addBook("Clean Code");
         basket.addBook("The Clean Coder");
+        basket.addBook("The Clean Coder");
+        basket.addBook("Clean Architecture");
         basket.addBook("Clean Architecture");
         basket.addBook("TDD by Example");
         basket.addBook("Working Effectively with Legacy Code");
