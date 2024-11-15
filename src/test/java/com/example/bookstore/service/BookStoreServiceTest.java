@@ -24,4 +24,16 @@ public class BookStoreServiceTest {
         assertEquals(50.0, price, "Price for a single book should be 50 EUR");
     }
 
+    @Test
+    void shouldApplyFivePercentDiscountForTwoDifferentBooks(){
+
+        BookBasket basket = new BookBasket();
+        basket.addBook("Clean Code");
+        basket.addBook("The Clean Coder");
+
+        double price = bookStoreService.calculatePrice(basket);
+
+        assertEquals(95.0, price, "Price for two different books be 95 EUR");
+    }
+
 }
