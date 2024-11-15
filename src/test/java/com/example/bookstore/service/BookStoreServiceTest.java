@@ -63,4 +63,16 @@ public class BookStoreServiceTest {
         basket.addBook("Working Effectively with Legacy Code");
         assertEquals(187.5, bookStoreService.calculatePrice(basket));
     }
+
+    @Test
+    void shouldCalculatePriceForMixedBasket(){
+        BookBasket basket = new BookBasket();
+        basket.addBook("Clean Code");
+        basket.addBook("Clean Code");
+        basket.addBook("The Clean Coder");
+        basket.addBook("Clean Architecture");
+        basket.addBook("TDD by Example");
+        basket.addBook("Working Effectively with Legacy Code");
+        assertEquals(320.0, bookStoreService.calculatePrice(basket));
+    }
 }
